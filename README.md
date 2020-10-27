@@ -1,19 +1,21 @@
-Spring Boot 2.0.4.RELEASE
+Spring Boot 2.3.4.RELEASE
 
-Spring data JPA 2.0.4.RELEASE
+Spring data JPA 2.3.4.RELEASE
 
-Spring Boot Security 2.0.4.RELEASE
+Spring Boot Security 2.3.4.RELEASE
 
-h2 1.4.197
+h2 1.4.200
 
-Thymeleaf 2.0.4.RELEASE
+Thymeleaf 2.3.4.RELEASE
 
-thymeleaf-extras-springsecurity4 3.0.2.RELEASE
+thymeleaf-layout-dialect  2.4.1
 
-MySQL 5.1.46
+thymeleaf-extras-springsecurity5 3.0.4.RELEASE
+
+MySQL 8.0.21
 
 Maven 3.8.0
 
-JDK 1.8
+JDK 11
 
-Eclipse 2018-09
+Eclipse 2019-12
