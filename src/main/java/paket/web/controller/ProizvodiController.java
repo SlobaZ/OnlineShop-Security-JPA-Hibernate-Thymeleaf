@@ -34,9 +34,9 @@ public class ProizvodiController {
 		
 	@RequestMapping(value = "/proizvodi", method = RequestMethod.GET)
 	public String searchProizvodi(@RequestParam (required = false) String naziv,
-										@RequestParam (required = false) String marka,
-										@RequestParam ( required = false) Double cena,
-										HttpServletRequest request, Model model) {
+					@RequestParam (required = false) String marka,
+					@RequestParam ( required = false) Double cena,
+					HttpServletRequest request, Model model) {
 	    
 		int page = 0;
 		int size = 5;
