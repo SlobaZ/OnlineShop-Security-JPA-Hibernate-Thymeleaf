@@ -57,7 +57,7 @@ public class AdminController {
 	
 
 	@GetMapping(value="/admin/addproizvod")
-    public ModelAndView newProizvod(){
+    public ModelAndView createNewProizvod(){
         ModelAndView modelAndView = new ModelAndView();
         Proizvod proizvod = new Proizvod();
         modelAndView.addObject("proizvod", proizvod);
@@ -66,7 +66,7 @@ public class AdminController {
     }
 	
     @PostMapping(value = "/admin/addproizvod")
-    public ModelAndView createNewProizvod(@Valid Proizvod proizvod, @RequestParam(value="file") MultipartFile file, BindingResult bindingResult) {
+    public ModelAndView addNewProizvod(@Valid Proizvod proizvod, @RequestParam(value="file") MultipartFile file, BindingResult bindingResult) {
         ModelAndView modelAndView = new ModelAndView();
         Proizvod proizvodExists = proizvodService.findByNazivAndMarka(proizvod.getNaziv(),proizvod.getMarka()); 
         if (proizvodExists != null) {
